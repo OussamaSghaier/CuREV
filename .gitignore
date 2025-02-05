@@ -1,0 +1,7 @@
+data/**
+models/**
+venv/
+activate_venv.sh
+.idea
+__pycache__/
+test/
