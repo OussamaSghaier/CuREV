@@ -11,7 +11,18 @@ CuREV: Curating Review Comments for Improved Code Review Automation
 
 This is the replication package accompanying our paper, *Curating Review Comments for Improved Code Review Automation*.
 
-The datasets of this paper are available on [Zenodo](https://zenodo.org/records/14812107).
+The datasets of this paper are available on [Zenodo](https://zenodo.org/records/14812107) and [HuggingFace 🤗](https://zenodo.org/records/14812107).
+  
+Latest Updates 🚀
+---
+> [!NOTE]
+> 
+>> **[11-02-2025]** 🤗 CuREV is now available on Hugging Face! You can access it [here](https://huggingface.co/datasets/OussamaBS/CuREV). 
+>
+>> **[05-02-2025]** 🔥 We release the first version of CuREV and the complete replication package of our paper.
+> 
+>> **[12-01-2025]** 📢 Our paper has been accepted for MSR 2025! Read it on [arXiv](https://arxiv.org/abs/2502.03425).  
+
 
 Overview
 ---
@@ -21,6 +32,19 @@ The main contributions of this work are threefold:
 (1) *A data-centric evaluation framework*, 
 (2) *A curation pipeline to improve the quality of review comments*, and 
 (3) *Evaluation of the curated dataset, compared to the original, on downstream tasks (i.e, comment generation and code refinement)*.
+
+<!-- Navigation Menu (Table of Contents) -->
+## Table of Contents
+- [Project structure](#project-structure)
+- [Environment setup](#environment-setup)
+- [Data](#data)
+- [Models](#models)
+- [1- A Data-Centric Evaluation Framework](#1--a-data-centric-evaluation-framework)
+- [2- CuREV: a Curated Dataset for Code Review](#2--curev-a-curated-dataset-for-code-review)
+- [3-a. Comment Generation](#3-a-comment-generation)
+- [3-b. Code Refinement](#3-b-code-refinement)
+- [Contributors](#contributors)
+- [Citation](#citation)
 
 Project structure
 ---
@@ -38,8 +62,8 @@ The project is structured as follows.
 
 
 
-Environment setup
----
+## Environment setup
+
 To facilitate usage and results replication, we include a file ```requirements.txt``` to install the required python libraries.
 Here are the instructions to create a virtual environment, activate it, and install dependencies using the provided `requirements.txt` file:
 
@@ -77,22 +101,21 @@ Here are the instructions to create a virtual environment, activate it, and inst
    deactivate
    ```
 
-Data
----
+## Data
+
 The original code review dataset is available in [Zenodo](https://zenodo.org/records/6900648).
 To run the experiments, you need to download ```Code_Refinement.zip``` and place the dataset under the ```data/``` folder.
 You can use the utilities method *create_HFdataset* in ```util.dataset``` to merge the downloaded jsonl files into a HuggingFace dataset. 
 
-Models
----
+## Models
+
 We run *Llama-3.1-70B* on our local machines using [ExLlamaV2](https://github.com/turboderp/exllamav2) to geneerate accurate judgments using our defined evaluation framework.
 You can choose the [same model](https://huggingface.co/hugging-quants/Meta-Llama-3.1-70B-Instruct-GPTQ-INT4) or any other model.
 Or, you can to download a quantized version of any other model that is compatible with *ExLlamaV2*.
 The downloaded model should be placed under the folder ```models/```.
 
 
-1- A data-centric evaluation framework
----
+## 1- A data-centric evaluation framework
 
 We propose an evaluation framework to categorize and assess the quality of code reviews. It consists of (1) a **categorization scheme** to classify the *type*, *nature*, and *civility* of code review comments, and (2) **scoring criteria** to assess the overall quality of code reviews based on their *relevance*, *clarity*, and *conciseness*. We apply our evaluation framework to the largest existing dataset of code reviews. Given the scale of the dataset, we utilize a large language model (LLM) as a judge to automatically annotate samples with thoroughly designed prompts to ensure reliable and consistent annotations.
 
@@ -108,8 +131,8 @@ python quality_assessment/inference.py \
 The full list of arguments is available in ```util/config.py```.
 
 
-2- CuREV: a curated dataset for code review
----
+## 2- CuREV: a curated dataset for code review
+
 
 The experiments conducted for this contribution are available under the folder ```data_curation/```.
 
@@ -124,8 +147,8 @@ python reformulate_reviews/inference.py \
 The full list of arguments is available in ```util/config.py```.
 
 
-3-a. Comment generation
----
+## 3-a. Comment generation
+
 
 The experiments conducted for this contribution are available under the folder ```comment_generation/```.
 
@@ -166,8 +189,8 @@ python comment_generation/evaluation.py"
 - The full list of arguments is available in ```util/config.py```.
 
 
-3-b. Code refinement
----
+## 3-b. Code refinement
+
 
 The experiments conducted for this contribution are available under the folder ```code_refinement/```.
 
@@ -199,8 +222,8 @@ python comment_generation/evaluate.py"
 - The full list of arguments is available in ```util/config.py```.
 
 
-Contributors
----
+## Contributors
+
 For questions, collaborations, or further discussion, please feel free to reach out to any of our contributors via email or open an issue on GitHub.    
 | Name | Contact | Github |
 |:-----:|------------|---------|
@@ -209,8 +232,8 @@ For questions, collaborations, or further discussion, please feel free to reach 
 | **Houari Sahraoui** | [sahraouh@iro.umontreal.ca](sahraouh@iro.umontreal.ca)<br/> |  | 
 
 
-Citation
----
+## Citation
+
 ```bibtex
 @misc{sghaier2025harnessinglargelanguagemodels,
       title={Harnessing Large Language Models for Curated Code Reviews}, 
