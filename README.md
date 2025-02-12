@@ -4,6 +4,8 @@ CuREV: Curating Review Comments for Improved Code Review Automation
 <p align="center">
     <a target="_blank" href="https://arxiv.org/abs/2502.03425"><img src="https://img.shields.io/badge/ArXiV-2502.03425-00a300.svg"></a>
     <a target="_blank" href="https://huggingface.co/datasets/OussamaBS/CuREV"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-CuREV-%23ff8811.svg"></a>
+<!--     <a target="_blank" href="https://zenodo.org/records/14812107"><img src="https://img.shields.io/badge/Zenodo-CuREV-68bbe3.svg"></a> -->
+    <a target="_blank" href="https://doi.org/10.5281/zenodo.14812107"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14812107.svg"></a>
     <a target="_blank" href="https://github.com/OussamaSghaier/CuREV/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-d70040"></a>
 </p>
 
@@ -195,6 +197,16 @@ python comment_generation/evaluate.py"
 ```
 
 - The full list of arguments is available in ```util/config.py```.
+
+
+Contributors
+---
+For questions, collaborations, or further discussion, please feel free to reach out to any of our contributors via email or open an issue on GitHub.    
+| Name | Contact | Github |
+|:-----:|------------|---------|
+| **Oussama Ben Sghaier** | [oussama.ben.sghaier@umontreal.ca](oussama.ben.sghaier@umontreal.ca)<br/> | [OussamaSghaier](https://github.com/OussamaSghaier) | 
+| **Martin Weyssow** | [mweyssow@smu.edu.sg](mweyssow@smu.edu.sg)<br/> | [martin-wey](https://github.com/martin-wey) | 
+| **Houari Sahraoui** | [sahraouh@iro.umontreal.ca](sahraouh@iro.umontreal.ca)<br/> |  | 
 
 
 Citation
