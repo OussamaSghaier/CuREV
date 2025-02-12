@@ -1,8 +1,15 @@
 CuREV: Curating Review Comments for Improved Code Review Automation
 ===============================
+
+<p align="center">
+    <a target="_blank" href="https://arxiv.org/abs/2502.03425"><img src="https://img.shields.io/badge/ArXiV-2502.03425-00a300.svg"></a>
+    <a target="_blank" href="https://huggingface.co/datasets/OussamaBS/CuREV"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-CuREV-%23ff8811.svg"></a>
+    <a target="_blank" href="https://github.com/OussamaSghaier/CuREV/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-d70040"></a>
+</p>
+
 This is the replication package accompanying our paper, *Curating Review Comments for Improved Code Review Automation*.
 
-The datasets of this paper are available on [Zenodo](https://zenodo.org/records/14058666).
+The datasets of this paper are available on [Zenodo](https://zenodo.org/records/14812107).
 
 Overview
 ---
@@ -70,7 +77,7 @@ Here are the instructions to create a virtual environment, activate it, and inst
 
 Data
 ---
-The original code review dataset is available in [Zenodo](https://zenodo.org/records/14058666).
+The original code review dataset is available in [Zenodo](https://zenodo.org/records/6900648).
 To run the experiments, you need to download ```Code_Refinement.zip``` and place the dataset under the ```data/``` folder.
 You can use the utilities method *create_HFdataset* in ```util.dataset``` to merge the downloaded jsonl files into a HuggingFace dataset. 
 
@@ -188,3 +195,18 @@ python comment_generation/evaluate.py"
 ```
 
 - The full list of arguments is available in ```util/config.py```.
+
+
+Citation
+---
+```bibtex
+@misc{sghaier2025harnessinglargelanguagemodels,
+      title={Harnessing Large Language Models for Curated Code Reviews}, 
+      author={Oussama Ben Sghaier and Martin Weyssow and Houari Sahraoui},
+      year={2025},
+      eprint={2502.03425},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2502.03425}, 
+}
+```
