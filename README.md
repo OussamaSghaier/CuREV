@@ -4,9 +4,15 @@ CuREV: Curating Review Comments for Improved Code Review Automation
 <p align="center">
     <a target="_blank" href="https://arxiv.org/abs/2502.03425"><img src="https://img.shields.io/badge/ArXiV-2502.03425-00a300.svg"></a>
     <a target="_blank" href="https://huggingface.co/datasets/OussamaBS/CuREV"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-CuREV-%23ff8811.svg"></a>
-<!--     <a target="_blank" href="https://zenodo.org/records/14812107"><img src="https://img.shields.io/badge/Zenodo-CuREV-68bbe3.svg"></a> -->
     <a target="_blank" href="https://doi.org/10.5281/zenodo.14812107"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14812107.svg"></a>
     <a target="_blank" href="https://github.com/OussamaSghaier/CuREV/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-d70040"></a>
+</p>
+<p align="center">
+<img src="https://img.shields.io/github/stars/OussamaSghaier/CuREV?style=social" alt="GitHub Stars">
+<img src="https://img.shields.io/github/forks/OussamaSghaier/CuREV?style=social" alt="GitHub Forks">
+<img src="https://img.shields.io/github/issues/OussamaSghaier/CuREV" alt="GitHub Issues">
+<img src="https://img.shields.io/github/contributors/OussamaSghaier/CuREV" alt="GitHub Contributors">
+<img src="https://img.shields.io/github/last-commit/OussamaSghaier/CuREV" alt="GitHub Last Commit">
 </p>
 
 This is the replication package accompanying our paper, *Curating Review Comments for Improved Code Review Automation*.
