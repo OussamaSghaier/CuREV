@@ -1,5 +1,5 @@
 import json
-from dataset import load_jsonl_file, load_dataset
+from util.dataset import load_jsonl_file, load_dataset
 
 results_path = "../data/eval_results/eval_results_postprocessed.jsonl"
 

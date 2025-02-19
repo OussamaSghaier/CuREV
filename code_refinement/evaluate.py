@@ -2,7 +2,7 @@ import logging
 logging.getLogger().setLevel(logging.ERROR)
 from code_bleu import compute_codebleu_avgscore
 from crystal_bleu import compute_crystalBLEU_avgscore
-from dataset import load_dataset
+from util.dataset import load_dataset
 
 languages = ['.cs', 'cpp', 'py', 'js', 'php', 'go', 'rb', 'c', 'java']
 

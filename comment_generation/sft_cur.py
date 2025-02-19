@@ -6,8 +6,8 @@ from trl import SFTTrainer
 from peft import LoraConfig
 import transformers
 transformers.set_seed(27)
-from config import ExLlamaArguments
-from dataset import load_dataset
+from util.config import ExLlamaArguments
+from util.dataset import load_dataset
 from prompt_templates import review_classification_system_prompt, review_classification_template
 
 # parse arguments

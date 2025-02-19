@@ -19,8 +19,8 @@ from prompt_templates import (
     review_classification_system_prompt,
     review_classification_template,
 )
-from config import ExLlamaArguments
-from dataset import load_dataset, save_data
+from util.config import ExLlamaArguments
+from util.dataset import load_dataset, save_data
 
 set_seed(27)
 

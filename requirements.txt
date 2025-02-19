@@ -12,7 +12,7 @@ einops==0.8.0
 exllamav2 @ https://github.com/turboderp/exllamav2/releases/download/v0.2.2/exllamav2-0.2.2+cu121.torch2.3.1-cp312-cp312-linux_x86_64.whl#sha256=30c8a9eb77b145bc0973253931a4b6683b98315e32a31683b5812c4838f8a5c8
 fastparquet==2024.5.0
 filelock==3.16.1
-flash-attn==2.6.3
+# flash-attn==2.6.3
 frozenlist==1.4.1
 fsspec==2024.6.1
 huggingface-hub==0.25.1
@@ -55,7 +55,7 @@ requests==2.32.3
 rich==13.8.1
 safetensors==0.4.5
 sentencepiece==0.2.0
-setuptools==75.1.0
+# setuptools==75.1.0
 six==1.16.0
 sympy==1.13.3
 tokenizers==0.20.0
@@ -70,3 +70,4 @@ wcwidth==0.2.13
 websockets==13.1
 xxhash==3.5.0
 yarl==1.12.1
+codebleu

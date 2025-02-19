@@ -1,8 +1,7 @@
 import re
 import json
-from dataset import load_jsonl_file
-from util import sort_dicts_by_key
-from dataset import save_dicts_to_jsonl, jsonl_to_csv
+from util.helpers import sort_dicts_by_key
+from util.dataset import save_dicts_to_jsonl, jsonl_to_csv, load_jsonl_file
 
 def extract_judgments(text):
     text = "Reformulated review comment: " + text

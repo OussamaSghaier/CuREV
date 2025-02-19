@@ -1,4 +1,4 @@
-from dataset import load_jsonl_file
+from util.dataset import load_jsonl_file
 
 file_path1 = '../../data/comment_results/inference/init/inference_results_final.jsonl'
 file_path2 = '../../data/comment_results/inference/cur/inference_results_final-v2.jsonl'

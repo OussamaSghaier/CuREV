@@ -1,6 +1,6 @@
 import json
 import re
-from dataset import load_dataset
+from util.dataset import load_dataset
 import random
 
 

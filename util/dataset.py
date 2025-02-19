@@ -2,7 +2,7 @@ import datasets
 import json
 import csv
 import pandas as pd
-from util import sort_dicts_by_key
+from util.helpers import sort_dicts_by_key
 
 
 def load_dataset(dataset_path, split=None):

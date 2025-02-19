@@ -1,7 +1,7 @@
 from nltk.translate.bleu_score import sentence_bleu
 from nltk.translate.bleu_score import SmoothingFunction
 import nltk
-from dataset import load_jsonl_file
+from util.dataset import load_jsonl_file
 
 
 chencherry = SmoothingFunction()

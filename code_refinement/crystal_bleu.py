@@ -5,7 +5,7 @@ from nltk.util import ngrams
 from crystalbleu import corpus_bleu
 import pickle
 import os
-from dataset import load_dataset
+from util.dataset import load_dataset
 
 trivial_ngrams_path = 'trivial_ngrams.pkl'
 dataset_path = '../data/Code_Refinement/CRdataset_reform'

@@ -70,6 +70,12 @@ The project is structured as follows.
 
 ## Environment setup
 
+There are two ways to set up the environment to run the project and use the scripts. Choose the method that best suits your workflow: *python virtual environment* or *docker*.
+
+### A. Python virtual environment
+
+This method involves setting up a python virtual environment to isolate the dependencies required by the project. Follow the steps below to create the environment, install the necessary libraries, and verify the installation.
+
 To facilitate usage and results replication, we include a file ```requirements.txt``` to install the required python libraries.
 Here are the instructions to create a virtual environment, activate it, and install dependencies using the provided `requirements.txt` file:
 
@@ -106,6 +112,48 @@ Here are the instructions to create a virtual environment, activate it, and inst
    ```bash
    deactivate
    ```
+
+### B. Docker
+
+Alternatively, you can run the project within a Docker container. This setup makes it easy to run the project in a containerized environment. 
+
+#### Prerequisites
+
+- Docker installed on your system. You can download it from [here](https://www.docker.com/get-started).
+
+#### Steps to Run with Docker
+
+1. **Build the docker image**  
+   Open a terminal in the root directory of the project and run the following command to build the Docker image:
+   ```bash
+   docker build -t curev .
+   ```
+      This will create a Docker image named curev based on the provided Dockerfile.
+2. **Create the docker container**   
+   After building the image, you can create a docker container using:
+   ```bash
+   docker run -it --name curev-container curev-image
+   ```
+      The above command should be run once (the first time) to create a container from the built image. For subsequent attempts, we should use the following commands to start and connect to the created docker container:      
+   ```bash
+   docker start curev-container
+   docker exec -it curev-container bash
+   ```
+      To stop the container:
+   ```bash
+   docker stop curev-container
+   ```
+      The project is now set up to run within a Docker container for your project, and you can easily start, connect, and stop the container as needed.
+
+
+
+
+4. **Verify the Installation**  
+   To confirm that all dependencies are installed correctly, run:
+   ```bash
+   pip list
+   ```
+
 
 ## Data
 
