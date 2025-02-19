@@ -34,6 +34,13 @@ Overview
 ---
 We propose a methodology to curate a code reviews dataset to enhance its quality and improve the performance of language models on code review downstream tasks, namely comment generation and code refinement.
 
+<div align="center">
+
+![Overview of CuREV](assets/methodology-1.png)
+
+_Overview of our curation pipeline for code reviews to create CuREV dataset (see [our paper](https://arxiv.org/abs/2502.03425) for more details)._
+</div>
+
 The main contributions of this work are threefold: 
 (1) *A data-centric evaluation framework*, 
 (2) *A curation pipeline to improve the quality of review comments*, and 
