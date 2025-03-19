@@ -17,7 +17,7 @@ CuREV: Curating Review Comments for Improved Code Review Automation
 
 This is the replication package accompanying our paper, *Curating Review Comments for Improved Code Review Automation*.
 
-The datasets of this paper are available on [Zenodo](https://zenodo.org/records/14812107) and [HuggingFace 🤗](https://zenodo.org/records/14812107).
+The datasets of this paper are available on [Zenodo](https://zenodo.org/records/14812107) and [HuggingFace 🤗](https://huggingface.co/datasets/OussamaBS/CuREV).
   
 Latest Updates 🚀
 ---
